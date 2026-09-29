@@ -5,8 +5,7 @@ from taxi.models import Manufacturer, Car, Driver
 
 
 
-# Create your views here.
-#nothing
+
 def index(request: HttpRequest) -> HttpResponse:
     num_drivers = Driver.objects.all().count()
     num_manufacturers = Manufacturer.objects.all().count()
